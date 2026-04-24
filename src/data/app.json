@@ -1,0 +1,232 @@
+{
+"nome": "Rotina do Bebê",
+"descricao": "Aplicativo para ajudar mães a registrar, acompanhar e organizar a rotina diária do bebê, incluindo mamadas, sono, fraldas, medicamentos, consultas e lembretes.",
+"telas": [
+{
+"nome": "Splash",
+"descricao": "Tela inicial de carregamento do aplicativo com logo e identificação visual.",
+"componentes": [
+"Logo do app",
+"Nome do app",
+"Indicador de carregamento"
+]
+},
+{
+"nome": "Onboarding",
+"descricao": "Apresenta os principais benefícios do app para novas usuárias.",
+"componentes": [
+"Slides explicativos",
+"Imagem ilustrativa",
+"Botão 'Começar'",
+"Botão 'Já tenho conta'"
+]
+},
+{
+"nome": "Login e Cadastro",
+"descricao": "Permite criar conta, entrar no app ou recuperar senha.",
+"componentes": [
+"Campo de e-mail",
+"Campo de senha",
+"Botão 'Entrar'",
+"Botão 'Criar conta'",
+"Link 'Esqueci minha senha'",
+"Login com Google/Apple"
+]
+},
+{
+"nome": "Cadastro do Bebê",
+"descricao": "Tela para registrar os dados principais do bebê.",
+"componentes": [
+"Campo nome do bebê",
+"Campo data de nascimento",
+"Campo sexo",
+"Upload de foto",
+"Campo peso",
+"Campo altura",
+"Campo observações",
+"Botão 'Salvar'"
+]
+},
+{
+"nome": "Início",
+"descricao": "Dashboard com resumo rápido da rotina do dia e atalhos para registros.",
+"componentes": [
+"Saudação",
+"Resumo do dia",
+"Última mamada",
+"Último sono",
+"Última troca de fralda",
+"Próximo lembrete",
+"Botão rápido 'Registrar mamada'",
+"Botão rápido 'Registrar sono'",
+"Botão rápido 'Registrar fralda'",
+"Botão rápido 'Registrar banho'"
+]
+},
+{
+"nome": "Linha do Tempo",
+"descricao": "Exibe todos os registros do dia em ordem cronológica.",
+"componentes": [
+"Lista de eventos",
+"Filtro por tipo de evento",
+"Botão editar registro",
+"Botão excluir registro"
+]
+},
+{
+"nome": "Registro de Mamada",
+"descricao": "Permite adicionar informações sobre mamadas e alimentação.",
+"componentes": [
+"Seleção do tipo de mamada",
+"Campo horário",
+"Campo duração",
+"Campo quantidade",
+"Campo observações",
+"Botão 'Salvar'"
+]
+},
+{
+"nome": "Registro de Sono",
+"descricao": "Permite registrar início, fim e duração do sono do bebê.",
+"componentes": [
+"Campo horário de início",
+"Campo horário de fim",
+"Cronômetro",
+"Campo observações",
+"Botão 'Salvar'"
+]
+},
+{
+"nome": "Registro de Fralda",
+"descricao": "Permite registrar as trocas de fralda e o tipo.",
+"componentes": [
+"Campo horário",
+"Seleção do tipo: xixi, cocô ou ambos",
+"Campo observações",
+"Botão 'Salvar'"
+]
+},
+{
+"nome": "Banho e Higiene",
+"descricao": "Registra cuidados de higiene do bebê.",
+"componentes": [
+"Opção banho",
+"Opção higiene nasal",
+"Opção limpeza bucal",
+"Opção corte de unhas",
+"Campo horário",
+"Campo observações",
+"Botão 'Salvar'"
+]
+},
+{
+"nome": "Lembretes",
+"descricao": "Tela para criar e gerenciar lembretes importantes da rotina.",
+"componentes": [
+"Lista de lembretes",
+"Campo título",
+"Campo data",
+"Campo horário",
+"Seleção de repetição",
+"Chave ligar/desligar notificação",
+"Botão 'Adicionar lembrete'"
+]
+},
+{
+"nome": "Medicamentos",
+"descricao": "Permite registrar remédios, doses e horários.",
+"componentes": [
+"Campo nome do medicamento",
+"Campo dose",
+"Campo horário",
+"Campo frequência",
+"Campo duração do tratamento",
+"Botão 'Marcar como administrado'",
+"Botão 'Salvar'"
+]
+},
+{
+"nome": "Consultas e Vacinas",
+"descricao": "Organiza consultas médicas, vacinas e anotações de saúde.",
+"componentes": [
+"Lista de consultas",
+"Lista de vacinas",
+"Campo data",
+"Campo local",
+"Campo observações",
+"Botão 'Adicionar consulta'",
+"Botão 'Adicionar vacina'"
+]
+},
+{
+"nome": "Relatórios",
+"descricao": "Exibe resumos e gráficos da rotina do bebê.",
+"componentes": [
+"Gráfico de mamadas",
+"Gráfico de sono",
+"Gráfico de trocas de fralda",
+"Resumo diário",
+"Resumo semanal",
+"Filtro por período"
+]
+},
+{
+"nome": "Perfil do Bebê",
+"descricao": "Tela para visualizar e editar os dados do bebê.",
+"componentes": [
+"Foto do bebê",
+"Nome",
+"Idade",
+"Peso",
+"Altura",
+"Alergias",
+"Informações do pediatra",
+"Botão 'Editar perfil'"
+]
+},
+{
+"nome": "Configurações",
+"descricao": "Permite ajustar preferências do app.",
+"componentes": [
+"Configuração de notificações",
+"Tema claro/escuro",
+"Idioma",
+"Backup de dados",
+"Privacidade",
+"Ajuda e suporte",
+"Botão sair"
+]
+}
+],
+"funcionalidades": [
+"Cadastro e login de usuária",
+"Cadastro de um ou mais bebês",
+"Registro de mamadas",
+"Registro de sono",
+"Registro de trocas de fralda",
+"Registro de banho e higiene",
+"Criação de lembretes e notificações",
+"Controle de medicamentos",
+"Agenda de consultas",
+"Controle de vacinas",
+"Resumo diário da rotina",
+"Linha do tempo de eventos",
+"Relatórios com gráficos",
+"Edição e exclusão de registros",
+"Configuração de perfil do bebê",
+"Backup e sincronização de dados"
+],
+"fluxo": [
+"Usuária abre o app e visualiza a tela Splash.",
+"Na primeira vez, acessa o Onboarding para conhecer o aplicativo.",
+"Faz login ou cria uma conta.",
+"Cadastra os dados do bebê.",
+"É direcionada para a tela Início.",
+"Na tela Início, visualiza o resumo do dia e os próximos lembretes.",
+"Usa os atalhos para registrar mamada, sono, fralda ou banho.",
+"Os registros aparecem automaticamente na Linha do Tempo.",
+"Pode criar lembretes para remédios, consultas, vacinas e rotina diária.",
+"Consulta relatórios para acompanhar padrões de sono, alimentação e higiene.",
+"Edita dados do bebê no Perfil e ajusta preferências em Configurações."
+]
+}
