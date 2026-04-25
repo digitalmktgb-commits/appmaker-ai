@@ -1,18 +1,17 @@
 import { useState, useEffect } from "react";
 import initialData from "../data/app.json";
 
-const API_KEY = "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"
 async function gerarApp(ideia: string, setAppData: any) {
   try {
-    const response = await fetch("https://api.openai.com/v1/responses", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${API_KEY}`,
-      },
-      body: JSON.stringify({
-        model: "gpt-4.1-mini",
-        input: `Responda APENAS com JSON válido, sem texto antes ou depois.
+    const response = await fetch("/api/gerar-app", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    ideia,
+  }),
+});
 
 Formato:
 {
