@@ -1,5 +1,7 @@
+
 export default async function handler(req, res) {
-  const { ideia } = req.body;
+  const body = JSON.parse(req.body || "{}");
+  const { ideia } = body;
 
   const response = await fetch("https://api.openai.com/v1/responses", {
     method: "POST",
