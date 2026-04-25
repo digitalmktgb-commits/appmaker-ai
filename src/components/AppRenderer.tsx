@@ -4,33 +4,11 @@ import initialData from "../data/app.json";
 async function gerarApp(ideia: string, setAppData: any) {
   try {
     const response = await fetch("/api/gerar-app", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-    ideia,
-  }),
-});
-
-Formato:
-{
-  "nome": "",
-  "descricao": "",
-  "telas": [
-    {
-      "nome": "",
-      "descricao": "",
-      "componentes": []
-    }
-  ],
-  "funcionalidades": [],
-  "fluxo": []
-}
-
-Ideia:
-${ideia}`,
-      }),
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ ideia }),
     });
 
     const data = await response.json();
@@ -47,11 +25,9 @@ ${ideia}`,
       return;
     }
 
-    console.log("JSON LIMPO:", match[0]);
-
     const json = JSON.parse(match[0]);
-
     setAppData(json);
+
   } catch (e) {
     console.error("ERRO GERAL:", e);
   }
