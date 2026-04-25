@@ -11,7 +11,23 @@ async function gerarApp(ideia: string, setAppData: any) {
       body: JSON.stringify({ ideia }),
     });
 
-    const data = await response.json();
+  const text = await response.text();
+
+let data;
+
+try {
+  data = JSON.parse(text);
+} catch {
+  console.error("Resposta não é JSON:", text);
+  return;
+}
+
+// 👇 verifica erro da API
+if (!response.ok) {
+  console.error("Erro da API:", data);
+  return;
+}
+
     console.log("RESPOSTA COMPLETA:", data);
 
     let texto = data.output?.[0]?.content?.[0]?.text || "";
