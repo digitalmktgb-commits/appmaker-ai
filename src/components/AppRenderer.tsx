@@ -22,7 +22,6 @@ try {
   return;
 }
 
-// 👇 verifica erro da API
 if (!response.ok) {
   console.error("Erro da API:", JSON.stringify(data, null, 2));
 }

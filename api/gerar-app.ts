@@ -20,10 +20,11 @@ ${ideia}`,
       }),
     });
 
-    // 👇 TRATAMENTO DE ERRO (faltava isso)
+  
     if (!response.ok) {
       const errorText = await response.text();
       console.error("ERRO OPENAI:", errorText);
+
 
       return res.status(500).json({
         error: "Erro na OpenAI",
